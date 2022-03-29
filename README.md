@@ -2,4 +2,6 @@
  
 python -m venv .venv
 
-.venv\Scripts\activate.bat
+.venv\Scripts\activate.bat //zamykanie do zamkniętego środowiska
+
+
