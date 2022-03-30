@@ -6,8 +6,8 @@ from openpyxl import load_workbook
 import datetime
 import random
 
-start = datetime.date(2010, 1, 1)
-end = datetime.date(2020, 2, 1)
+start = datetime.date(2020, 1, 1)
+end = datetime.date(2020, 12, 31)
 
 def random_date(start, end):
     """Generate a random datetime between `start` and `end`"""
