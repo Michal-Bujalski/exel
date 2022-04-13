@@ -9,17 +9,21 @@ from pandas import DataFrame
 
 sheet = pd.read_excel("do-testu.xlsx")
 
-daty = sheet["daty"] > "2020-5-1"
+
+
+daty = sheet["daty"] > "2020-12-1"
+
 
 d = {"data" : sheet["daty"], "warunek" : daty,}
 
-df = pd.DataFrame(data=d, columns=["warunek", "data", "wynik"])
 
-#chciałbym teraz jakiś statment if żeby patrzył date jeśli jest if tą ją dodawał do tego dataframe
+df = pd.DataFrame(data=d, columns=["warunek", "data"])
 
+#Jezeli True print Data
+for x in df.index:
+    if df['warunek'][x]:
+        print(df['data'][x])
 
-
-print(df)
  
 
 
