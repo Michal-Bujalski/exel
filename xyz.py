@@ -11,7 +11,7 @@ sheet = pd.read_excel("do-testu.xlsx")
 
 daty = sheet["daty"] > "2020-5-1"
 
-d = {"data" : sheet["daty"], "warunek" : daty, "wynik" : D_F}
+d = {"data" : sheet["daty"], "warunek" : daty,}
 
 df = pd.DataFrame(data=d, columns=["warunek", "data", "wynik"])
 
