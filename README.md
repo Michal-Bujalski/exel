@@ -7,3 +7,5 @@ python -m venv .venv
 # Jesli instalujesz jakis nowy pakiet uzyj komendy ponizej aby dodac, 
 # pakiet do requirements.txt aby inni mogli latwo zainstalowac wszystkie potrzebne pakiety.
  pip freeze > requirements.txt  
+# Aby zainstalowac.
+pip install -r requirements.txt
